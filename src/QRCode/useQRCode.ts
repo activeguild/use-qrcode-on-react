@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import QRCode from "qrcode";
+import { toDataURL } from "qrcode";
 
 export const useQRCode = (text: string) => {
   const [dataUrl, setDataUrl] = useState("");
 
   useEffect(() => {
-    QRCode.toDataURL(text)
+    toDataURL(text)
       .then((url) => {
         setDataUrl(url);
       })
