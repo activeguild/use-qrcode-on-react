@@ -6,10 +6,10 @@ interface QRCodeProps {
 }
 
 export const NextQRCode: FC<QRCodeProps> = ({ text }) => {
-  const { Canvas } = useQRCode();
+  const { Image } = useQRCode();
 
   return (
-    <Canvas
+    <Image
       text={text}
       options={{
         level: "M",
