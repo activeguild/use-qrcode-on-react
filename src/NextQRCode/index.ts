@@ -1,0 +1,1 @@
+export { NextQRCode } from "./NextQRCode";
